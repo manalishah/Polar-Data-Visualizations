@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>Polar-Viz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/D32.css" rel="stylesheet">
+    <link href="../css/general.css" rel="stylesheet">
+ 
+
+  </head>
+
+  <body>
+
+    <div class="container">
+    <h1 style="color:#DD1C77">Polar Data Visualization</h1> 
+    </div> 
+    <form id="inputForm" name="inputForm">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Locations</a>
+           <a id = "current-page" class="navbar-brand" href="#">Collapsible Tree</a>
+          <a class="navbar-brand" href="word_cloud.html">Measurements</a>
+          <a class="navbar-brand" href="duration_dashboard.html"> Durations</a>
+          <a class="navbar-brand" href="mpeg_details.html">MPEG Details</a>
+          <a class="navbar-brand" href="journals.html">Scientific Journals</a>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+      <div class="container">
+        
+        <div id="hzBarChart" class="panel panel-info text-center">
+          <div class="panel-heading"><h3 class="panel-title">Scientific Papers Obtained through Google Scholar</h3></div>
+          <div class="panel-body"></div>
+        </div>
+      </div><!-- /.container -->
+    </form>
+</form>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="../js/collapsible_tree.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      load_dendrogram();
+    });
+    
+    </script>
+   
+
+  </body>
+</html>
+
